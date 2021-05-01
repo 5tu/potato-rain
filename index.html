@@ -1,43 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-$size: 100px;
+<html lang="en" >
 
+<head>
+<title>Helenb</title>
+<style>
 body {
   margin: 0;
 }
 
 img, div {
-  width: $size;
-  height: $size;
+  width: 100px;
+  height: 100px;
 }
 
 .x {
-  animation: x 13s linear infinite alternate;
+  -webkit-animation: x 13s linear infinite alternate;
+          animation: x 13s linear infinite alternate;
 }
 
 .y {
-  animation: y 7s linear infinite alternate;
+  -webkit-animation: y 7s linear infinite alternate;
+          animation: y 7s linear infinite alternate;
+}
+
+@-webkit-keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 100px));
+  }
 }
 
 @keyframes x {
   100% {
-    transform: translateX( calc(100vw - #{$size}) );
+    transform: translateX(calc(100vw - 100px));
   }
 }
-
+@-webkit-keyframes y {
+  100% {
+    transform: translateY(calc(100vh - 100px));
+  }
+}
 @keyframes y {
   100% {
-    transform: translateY( calc(100vh - #{$size}) );
+    transform: translateY(calc(100vh - 100px));
   }
 }
-    
-    </style>
-  </head>
-<body>
-<div class="x">
-  <img class="y" src="potato.png" alt="potato" />
+</head>
+
+<body translate="no" >
+  <div class="x">
+  <img class="y" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt="codepen" />
 </div>
 </body>
 </html>
