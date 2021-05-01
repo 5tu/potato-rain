@@ -4,51 +4,15 @@
 <head>
 <title>Helenb</title>
 <style>
-body {
-  margin: 0;
-}
-
-img, div {
-  width: 120px;
-  height: 120px;
-}
-
-#x {
-  -webkit-animation: x 13s linear infinite alternate;
-          animation: x 13s linear infinite alternate;
-}
-
-#y {
-  -webkit-animation: y 7s linear infinite alternate;
-          animation: y 7s linear infinite alternate;
-}
-
-@-webkit-keyframes x {
-  100% {
-    transform: translateX(calc(100vw - 120px));
-  }
-}
-
-@keyframes x {
-  100% {
-    transform: translateX(calc(100vw - 120px));
-  }
-}
-@-webkit-keyframes y {
-  100% {
-    transform: translateY(calc(100vh - 120px));
-  }
-}
-@keyframes y {
-  100% {
-    transform: translateY(calc(100vh - 120px));
-  }
+.fill {
+    background:white;
+    width:200px;
+    height:200px;
+ cursor:potato.png, auto;
 }
 </head>
 
-<body translate="no" >
-  <div id="x">
-  <img id="y" src="potato.png" alt="Potato" />
-</div>
+<body>
+<div class="fill"></div>
 </body>
 </html>
