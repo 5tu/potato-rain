@@ -7,16 +7,39 @@
   
 <link rel="icon" type="image/png" href="potato.png">
   
-<style>
+<style type="text/css">
 body, html {
 background-color:black;
 cursor: url(potato_cursor.gif), auto !important;
 }
+  
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    height: 400px;
+    width: 430px;
+    top: calc(50% - 215px);
+    left: calc(50% - 200px);
+    background-image: url('potatocloud.png');
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 50px); }
+    to   { transform: translate(0, -0px); }    
+}
+  
 </style>
   
 </head>
 
 <body>
-<div class="fill">hello, baku.</div>
+  
+<div class="floating">
+</div>
+  
 </body>
 </html>
