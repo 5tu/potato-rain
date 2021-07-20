@@ -29,7 +29,8 @@
     text-align: center;
     font-family: 'Fredoka One', cursive;
     font-size: 35pt;
-    top: calc(50% - 25vh);
+    <!-- top: calc(50% - 25vh); -->
+    bottom: 20px;
     left: calc(50% - 25vw);
   
 }
@@ -49,31 +50,5 @@ A:hover { COLOR: deepskyblue; TEXT-DECORATION: none; font-weight: none }
     IT IS YOUR HALF BIRTHDAY BAKU.
 </h1>
   
-<script>
-var colors = ["#8b5642", "#6a696b"];
-
-function frame() {
-  confetti({
-    particleCount: 2,
-    angle: 60,
-    spread: 55,
-    origin: { x: 0 },
-    colors: colors
-  });
-  confetti({
-    particleCount: 2,
-    angle: 120,
-    spread: 55,
-    origin: { x: 1 },
-    colors: colors
-  });
-
-  if (Date.now() < Date.now() + 15000) {
-    requestAnimationFrame(frame);
-  }
-}
-
-window.onload = frame();
-  </script>
 </body>
 </html>
