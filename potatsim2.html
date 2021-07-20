@@ -97,6 +97,7 @@
   top: calc(15% -125px);
   left calc(15% -125px);
   background-image: url('moon.png');
+  background-size:contain;
   }
 </style>
   
@@ -110,13 +111,29 @@
 <div class="stars"></div>
 <div class="twinkling"></div>
 
-<a href="potatsim.html"?
+<a onclick="playAudio()">
 <div class="floating">
 </div>
 </a>
 
 <div class="moon">
 </div>
+
+<audio id="theBoss">
+  <source src="boss.mp3" type="audio/mp3">
+</audio>
+
+<script>
+var x = document.getElementById("theBoss"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
   
 </body>
 </html>
