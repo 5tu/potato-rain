@@ -2,6 +2,23 @@
 <head>
 <style type="text/css">
   
+  .office-banner {
+  background-color: #e2ddd8;
+  font-family: "Arial";
+  padding: 0.125em;
+  font-size: 4em;
+  text-align: center;
+  white-space: nowrap;
+  transform: rotate(-10deg);
+  position: fixed;
+  top: 25%;
+  left: -5%;
+  right: -5%;
+  z-index: 100;
+  margin-top: 0;
+}
+
+  
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
   
   .clickme
@@ -27,5 +44,36 @@ A:hover { COLOR: deepskyblue; TEXT-DECORATION: none; font-weight: none }
 <div class="clickme">
 <a href="potatsim.html">Launch PotatSim</a>
 </div>
+  
+  <h1 class="office-banner">
+    IT IS YOUR HALF BIRTHDAY BAKU.
+</h1>
+  
+<script>
+var colors = ["#8b5642", "#6a696b"];
+
+function frame() {
+  confetti({
+    particleCount: 2,
+    angle: 60,
+    spread: 55,
+    origin: { x: 0 },
+    colors: colors
+  });
+  confetti({
+    particleCount: 2,
+    angle: 120,
+    spread: 55,
+    origin: { x: 1 },
+    colors: colors
+  });
+
+  if (Date.now() < Date.now() + 15000) {
+    requestAnimationFrame(frame);
+  }
+}
+
+window.onload = frame();
+  </script>
 </body>
 </html>
